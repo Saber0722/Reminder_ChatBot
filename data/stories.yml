@@ -1,0 +1,22 @@
+version: "3.1"
+
+stories:
+
+- story: greet and set reminder
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: set_reminder
+  - action: action_save_reminder
+  - action: utter_confirm_reminder
+
+- story: set reminder directly
+  steps:
+  - intent: set_reminder
+  - action: action_save_reminder
+  - action: utter_confirm_reminder
+
+- story: view reminders
+  steps:
+  - intent: view_reminders
+  - action: action_view_reminders

@@ -1,0 +1,60 @@
+version: "3.1"
+
+intents:
+  - greet
+  - set_reminder
+  - view_reminders
+  - goodbye
+  - affirm
+  - deny
+
+entities:
+  - task
+  - time
+
+slots:
+  task:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: task
+  time:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: time
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_confirm_reminder:
+    - text: "Sure! Reminder set for {task} at {time}."
+
+  utter_ask_task:
+    - text: "What task would you like to set a reminder for?"
+
+  utter_ask_time:
+    - text: "When would you like to be reminded?"
+
+  utter_ask_if_helped:
+    - text: "Can I help you with anything else?"
+
+  utter_no_reminders:
+    - text: "You have no reminders set."
+
+  utter_view_reminders:
+    - text: "Here are your reminders:"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+
+actions:
+  - action_save_reminder
+  - action_view_reminders
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

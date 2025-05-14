@@ -1,0 +1,92 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: set_reminder
+  examples: |
+    - remind me to [call mom](task) [tomorrow](time)
+    - remind me to [finish my homework](task)
+    - remind me to [pick up the dry cleaning](task) [next week](time)
+    - remind me to [water the plants](task) [in 2 hours](time)
+    - remind me to [send the email](task) [tonight](time)
+    - remind me to [go to the gym](task) [tomorrow morning](time)
+    - remind me to [take my medicine](task) [at 8 AM](time)
+    - remind me to [pay the bills](task) [next month](time)
+    - remind me to [walk the dog](task) [at 6 PM](time)
+    - remind me to [call the doctor](task) [in 30 minutes](time)
+    - remind me to [schedule a meeting](task) [at 3 PM](time)
+    - remind me to [buy a gift](task) [this weekend](time)
+    - remind me to [check the mail](task) [in the morning](time)
+    - remind me to [book a flight](task) [at 9 PM](time)
+    - remind me to [clean the house](task) [tomorrow](time)
+    - remind me to [do the laundry](task) [tonight](time)
+    - set a reminder for [my meeting](task) at [5 PM](time)
+    - set a reminder for [my appointment](task) at [6 PM](time)
+    - set a reminder for [grocery shopping](task) at [3 PM](time)
+    - remind me to [take a break](task) [in 15 minutes](time)
+    - remind me to [do homework](task) [tonight](time)
+    - remind me to [work out](task) [tomorrow morning](time)
+
+- intent: view_reminders
+  examples: |
+    - show me my reminders
+    - what are my reminders?
+    - list my reminders
+    - display my reminders
+    - remind me what I have to do
+    - show my tasks
+    - what do I need to do?
+    - what are my tasks?
+    - list my tasks
+    - show me my to-do list
+    - what do I have to do today?
+    - what are my plans for today?
+    - what do I need to remember?
+    - what are my reminders for today?
+    - what do I need to do this week?
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - see you later
+    - good night
+    - bye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - that is correct
+    - absolutely
+    - you are right
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really

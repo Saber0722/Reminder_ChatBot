@@ -1,0 +1,12 @@
+[project]
+name = "personal-task-reminder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "datetime>=5.5",
+    "python-dateutil>=2.9.0.post0",
+    "schedule>=1.2.2",
+    "typing>=3.10.0.0",
+]
